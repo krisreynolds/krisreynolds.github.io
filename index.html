@@ -41,7 +41,20 @@
             color: #667eea; text-decoration: none; font-weight: 600; 
         }
         .project a:hover { color: #764ba2; }
-        @media (max-width: 768px) { .container { padding: 40px 15px; } }
+        
+        /* New styles for Buy Me a Beer button */
+        .bmc-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px; /* Large gap above */
+            padding: 20px 0;
+        }
+        
+        @media (max-width: 768px) { 
+            .container { padding: 40px 15px; }
+            .bmc-section { margin-top: 60px; }
+        }
     </style>
 </head>
 <body>
@@ -54,7 +67,11 @@
                 <p>A directory of various Scouting resources and information.</p>
             </div>
         </div>
-        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="krisreynolds" data-color="#FFDD00" data-emoji="🍺"  data-font="Cookie" data-text="Buy me a beer" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+        
+        <!-- Wrapped Buy Me a Beer button -->
+        <div class="bmc-section">
+            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="krisreynolds" data-color="#FFDD00" data-emoji="🍺" data-font="Cookie" data-text="Buy me a beer" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
+        </div>
     </div>
 </body>
 </html>
