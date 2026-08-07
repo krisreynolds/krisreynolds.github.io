@@ -4,88 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KrisReynolds.co.uk</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
-            line-height: 1.6; color: #333; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
-            min-height: 100vh; 
-        }
-        .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
-        h1 { 
-            font-size: clamp(2.5rem, 8vw, 4rem); text-align: center; 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
-            margin-bottom: 20px; font-weight: 300; 
-        }
-        .intro { 
-            text-align: center; max-width: 600px; margin: 0 auto 50px; 
-            font-size: 1.2rem; color: #555; 
-        }
-        .projects { 
-            display: grid; gap: 20px; 
-        }
-        .project { 
-            background: rgba(255,255,255,0.9); 
-            padding: 30px; border-radius: 16px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-            transition: all 0.3s ease; 
-        }
-        .project:hover { 
-            transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); 
-        }
-        .project h3 { 
-            color: #667eea; font-size: 1.5rem; margin-bottom: 10px; 
-        }
-        .project a { 
-            color: #667eea; text-decoration: none; font-weight: 600; 
-        }
-        .project a:hover { color: #764ba2; }
-        
-        /* New styles for Buy Me a Beer button */
-        .bmc-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 80px; /* Large gap above */
-            padding: 20px 0;
-        }
-        
-        @media (max-width: 768px) { 
-            .container { padding: 40px 15px; }
-            .bmc-section { margin-top: 60px; }
-        }
-    </style>
+    styles.css
 </head>
 <body>
     <div class="container">
         <h1>KrisReynolds.co.uk</h1>
-        <p class="intro">Just a list of the things I've worked on or am still working on.</p>
+
+        <p class="intro">
+            Just a list of the things I've worked on or am still working on.
+        </p>
+
         <div class="projects">
+
             <div class="project">
-                <h3><a href="https://www.scoutbook.org.uk" target="_blank">Scoutbook</a></h3>
-                <p>Scoutbook is a clean, ad-free directory of curated links and resources for UK Scout Association volunteers and youth leaders. Built using Markdown, TOML, JavaScript, and CSS via <a href="https://www.zensical.org" target="_blank">Zensical</a>, it helps you find the good stuff fast!</p>
+                <h3>
+                    book.org.uk" target="_blank" rel="noopener noreferrer">
+                        Scoutbook
+                    </a>
+                </h3>
+                <p>
+                    Scoutbook is a clean, ad-free directory of curated links and resources for UK Scout Association volunteers and youth leaders.
+                    Built using Markdown, TOML, JavaScript, and CSS via
+                    <a href="https://www.zensical.org" target="_blank" rel="noopener noreferrer">
+                        Zensical
+                    </a>,
+                    it helps you find the good stuff fast!
+                </p>
             </div>
 
             <div class="project">
-                <h3><a href="https://www.dddprinted.com" target="_blank">DDDPrinted.com</a></h3>
-                <p>DDDPrinted.com is a hobby gone too far! A selection of 3D printed items, including Christmas decorations, NFC tags, keyrings and much more with plenty of customisation options. Mostly aimed at the Scouting and Guiding communities but there's something for everyone!</p>
+                <h3>
+                    <a href="https://www.dddprinted.com" target="_blank" rel="noopener noreferrer">
+                        DDDPrinted.com
+                    </a>
+                </h3>
+                <p>
+                    DDDPrinted.com is a hobby gone too far! A selection of 3D printed items, including Christmas decorations,
+                    NFC tags, keyrings and much more with plenty of customisation options. Mostly aimed at the Scouting and
+                    Guiding communities but there's something for everyone!
+                </p>
             </div>
 
-        <div class="project">
-                <h3><a href="https://portfolio.krisreynolds.co.uk" target="_blank">MSc Portfolio</a></h3>
-                <p>As part of my Level 7 Apprenticeship (Digital and technology solutions specialist), I have to produce a portfolio of my work - this is where's being created</p>
+            <div class="project">
+                <h3>
+                    https://portfolio.krisreynolds.co.uk" target="_blank" rel="noopener noreferrer">
+                        MSc Portfolio
+                    </a>
+                </h3>
+                <p>
+                    As part of my Level 7 Apprenticeship (Digital and Technology Solutions Specialist),
+                    I have to produce a portfolio of my work. This is where it's being created.
+                </p>
             </div>
+
         </div>
     </div>
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('krisreynoldsdev', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Buy me a beer!',
-    'floating-chat.donateButton.background-color': '#00b9fe',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>
+
+    /cdn/scripts/overlay-widget.js"></script>
+    <script>
+        kofiWidgetOverlay.draw('krisreynoldsdev', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Buy me a beer!',
+            'floating-chat.donateButton.background-color': '#00b9fe',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+    </script>
 </body>
 </html>
